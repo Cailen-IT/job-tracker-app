@@ -1,0 +1,39 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h1>My Job Tracker</h1>
+
+<a href="/add-job">➕ Add Job</a> |
+<a href="/logout">Logout</a>
+
+<hr>
+
+<table border="1" cellpadding="8">
+    <tr>
+        <th>Company</th>
+        <th>Role</th>
+        <th>Status</th>
+        <th>Actions</th>
+    </tr>
+
+    {% for job in jobs %}
+    <tr>
+        <td>{{ job.company }}</td>
+        <td>{{ job.role }}</td>
+        <td>{{ job.status }}</td>
+        <td>
+            <a href="/update-status/{{ job.id }}/Applied">Applied</a> |
+            <a href="/update-status/{{ job.id }}/Interview">Interview</a> |
+            <a href="/update-status/{{ job.id }}/Offer">Offer</a> |
+            <a href="/delete-job/{{ job.id }}">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
