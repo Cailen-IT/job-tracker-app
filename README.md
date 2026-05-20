@@ -1,88 +1,47 @@
-\# Smart Job Tracker (Flask Full-Stack Project)
+# Smart Job Tracker (Full-Stack Flask App)
 
+## 📌 Overview
+Smart Job Tracker is a full-stack web application built with Flask that allows users to register, log in, and manage job applications in one place. It demonstrates authentication, CRUD operations, and database integration.
 
+---
 
-\## Overview
+## 🚀 Features
+- User Registration and Login System
+- Secure Authentication (Session-based)
+- Add, View, and Manage Job Applications
+- Dashboard for tracking applications
+- SQLite database integration
+- Responsive frontend using HTML/CSS
 
-A full-stack job tracking web application built using Flask, SQLite, and HTML/CSS.  
+---
 
-It allows users to register, log in, and manage job applications with status tracking.
+## 🛠️ Tech Stack
+- Backend: Python (Flask)
+- Frontend: HTML, CSS
+- Database: SQLite
+- Tools: Git, GitHub, VS Code
 
+---
 
+## 📂 Project Structure
+- app.py → Main Flask application
+- templates/ → HTML pages (login, register, dashboard)
+- static/ → CSS styling
+- instance/ → Database storage
 
-\---
+---
 
+## 🎯 Purpose
+This project was built to demonstrate full-stack development skills including backend logic, authentication systems, and database handling. It is suitable for junior software engineering and IT graduate roles.
 
+---
 
-\## Features
+## 📸 Demo
+Run the application locally to explore the full functionality.
 
-\- User registration and login system
+---
 
-\- Session-based authentication
-
-\- Add job applications (company, role)
-
-\- Track job status (Applied, Interview, Offer)
-
-\- Delete jobs
-
-\- User-specific job isolation
-
-\- Persistent SQLite database
-
-
-
-\---
-
-
-
-\## Tech Stack
-
-\- Python (Flask)
-
-\- SQLite (SQLAlchemy)
-
-\- HTML / CSS
-
-\- Jinja2 Templates
-
-
-
-\---
-
-
-
-\## What I Learned
-
-\- Backend web development with Flask
-
-\- Database design and CRUD operations
-
-\- User authentication and session handling
-
-\- Full-stack application structure
-
-
-
-\---
-
-
-
-\## How to Run
-
-1\. Install dependencies:
-
-&#x20;  pip install flask flask\_sqlalchemy
-
-
-
-2\. Run the app:
-
-&#x20;  python app.py
-
-
-
-3\. Open:
-
-&#x20;  http://127.0.0.1:5000
-
+## 🔧 How to Run
+```bash
+pip install flask
+python app.py
